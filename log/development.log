@@ -1,19 +1,27 @@
-Started GET "/" for ::1 at 2017-04-13 14:41:52 +0200
+Started GET "/" for ::1 at 2017-04-24 21:26:33 +0200
 Processing by Rails::WelcomeController#index as HTML
   Parameters: {"internal"=>true}
   Rendering /Users/vivienne.klaassens/.bundle/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
   Rendered /Users/vivienne.klaassens/.bundle/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
-Completed 200 OK in 31ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 32ms (Views: 13.7ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/" for ::1 at 2017-04-13 14:49:58 +0200
+Started GET "/" for ::1 at 2017-04-24 21:28:03 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/vivienne.klaassens/.bundle/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/vivienne.klaassens/.bundle/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (4.8ms)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-24 21:29:06 +0200
 Processing by WelcomeController#index as HTML
   Rendering welcome/index.html.erb within layouts/application
-  Rendered welcome/index.html.erb within layouts/application (3.0ms)
-Completed 200 OK in 1375ms (Views: 1355.9ms | ActiveRecord: 0.0ms)
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1144ms (Views: 1141.6ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/articles/new" for ::1 at 2017-04-14 10:27:48 +0200
+Started GET "/articles/new" for ::1 at 2017-04-24 21:30:01 +0200
   
 ActionController::RoutingError (uninitialized constant ArticlesController):
   
@@ -71,77 +79,13 @@ puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
   Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
-  Rendered collection of /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (21.9ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (26.6ms)
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (15.2ms)
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.9ms)
   Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.1ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (187.6ms)
-Started GET "/articles/new" for ::1 at 2017-04-14 10:27:57 +0200
-  
-ActionController::RoutingError (uninitialized constant ArticlesController):
-  
-activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
-activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
-activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
-activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
-activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
-actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
-actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
-actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
-actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
-actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
-actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
-actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
-rack (2.0.1) lib/rack/etag.rb:25:in `call'
-rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
-rack (2.0.1) lib/rack/head.rb:12:in `call'
-rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
-rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
-activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
-activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
-activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
-activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
-actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
-web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
-web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
-web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
-railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
-railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
-activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
-activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
-activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
-railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
-sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
-rack (2.0.1) lib/rack/method_override.rb:22:in `call'
-rack (2.0.1) lib/rack/runtime.rb:22:in `call'
-activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
-rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
-railties (5.0.2) lib/rails/engine.rb:522:in `call'
-puma (3.8.2) lib/puma/configuration.rb:224:in `call'
-puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
-puma (3.8.2) lib/puma/server.rb:435:in `process_client'
-puma (3.8.2) lib/puma/server.rb:299:in `block in run'
-puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
-  Rendered collection of /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (14.0ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (124.4ms)
-Started GET "/articles/new" for ::1 at 2017-04-14 10:32:00 +0200
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (116.6ms)
+Started GET "/articles/new" for ::1 at 2017-04-24 21:33:19 +0200
   
 AbstractController::ActionNotFound (The action 'new' could not be found for ArticlesController):
   
@@ -196,10 +140,23 @@ puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.3ms)
-Started GET "/articles/new" for ::1 at 2017-04-14 10:33:10 +0200
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.7ms)
+Started GET "/articles/new" for ::1 at 2017-04-24 21:33:34 +0200
+  
+SyntaxError (/Users/vivienne.klaassens/blog/app/controllers/articles_controller.rb:5: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/articles_controller.rb:5: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.9ms)
+Started GET "/articles/new" for ::1 at 2017-04-24 21:33:52 +0200
 Processing by ArticlesController#new as HTML
-Completed 406 Not Acceptable in 61ms (ActiveRecord: 0.0ms)
+Completed 406 Not Acceptable in 51ms (ActiveRecord: 0.0ms)
 
 
   
@@ -284,31 +241,61 @@ puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.9ms)
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
   Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
   Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (102.0ms)
-Started GET "/articles/new" for ::1 at 2017-04-14 10:38:34 +0200
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.7ms)
+Started GET "/articles/new" for ::1 at 2017-04-24 21:35:18 +0200
 Processing by ArticlesController#new as HTML
   Rendering articles/new.html.erb within layouts/application
-  Rendered articles/new.html.erb within layouts/application (5.7ms)
-Completed 200 OK in 717ms (Views: 694.6ms | ActiveRecord: 0.0ms)
+  Rendered articles/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 146ms (Views: 143.1ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/articles/new" for ::1 at 2017-04-14 10:41:59 +0200
+Started GET "/articles/new" for ::1 at 2017-04-24 21:35:34 +0200
 Processing by ArticlesController#new as HTML
   Rendering articles/new.html.erb within layouts/application
-  Rendered articles/new.html.erb within layouts/application (62.7ms)
-Completed 200 OK in 125ms (Views: 122.9ms | ActiveRecord: 0.0ms)
+  Rendered articles/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 56ms (Views: 54.5ms | ActiveRecord: 0.0ms)
 
 
-Started POST "/articles/new" for ::1 at 2017-04-14 10:45:00 +0200
+Started GET "/articles/new" for ::1 at 2017-04-24 21:37:48 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2017-04-24 21:37:54 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q+c78H568iyP02JT1Vko6m8hWb0g0PMlQdNkt6/RzvrGc5XdRRrR8LiROO/Tl9/Rj/R9UGr2gEAIJlbGcTg7CQ==", "article"=>{"title"=>"test", "text"=>"TEST\r\n"}, "commit"=>"Save Article"}
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for ::1 at 2017-04-24 21:39:30 +0200
   
-ActionController::RoutingError (No route matches [POST] "/articles/new"):
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
   
-actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.2) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
 web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
 web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
@@ -334,62 +321,31 @@ puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
 puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
   Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.4ms)
-  Rendered collection of /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (8.3ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.3ms)
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
   Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.9ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (148.1ms)
-Started POST "/articles/new" for ::1 at 2017-04-14 10:45:14 +0200
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.6ms)
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateArticles (20170424193810)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170424193810"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-04-24 19:39:54 UTC], ["updated_at", 2017-04-24 19:39:54 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/articles" for ::1 at 2017-04-24 21:41:21 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   
-ActionController::RoutingError (No route matches [POST] "/articles/new"):
-  
-actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
-web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
-web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
-web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
-railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
-railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
-activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
-activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
-activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
-railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
-sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
-rack (2.0.1) lib/rack/method_override.rb:22:in `call'
-rack (2.0.1) lib/rack/runtime.rb:22:in `call'
-activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
-rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
-railties (5.0.2) lib/rails/engine.rb:522:in `call'
-puma (3.8.2) lib/puma/configuration.rb:224:in `call'
-puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
-puma (3.8.2) lib/puma/server.rb:435:in `process_client'
-puma (3.8.2) lib/puma/server.rb:299:in `block in run'
-puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (22.5ms)
-  Rendered collection of /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (8.0ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (126.3ms)
-Started GET "/articles/new" for ::1 at 2017-04-14 10:47:44 +0200
-Processing by ArticlesController#new as HTML
-  Rendering articles/new.html.erb within layouts/application
-  Rendered articles/new.html.erb within layouts/application (10.8ms)
-Completed 200 OK in 103ms (Views: 98.1ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/articles" for ::1 at 2017-04-14 10:47:46 +0200
-  
-AbstractController::ActionNotFound (The action 'create' could not be found for ArticlesController):
+AbstractController::ActionNotFound (The action 'index' could not be found for ArticlesController):
   
 actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
 actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
@@ -397,6 +353,230 @@ actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
 actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
 actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
 actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+Started GET "/articles/new" for ::1 at 2017-04-24 21:41:31 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2017-04-24 21:41:35 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iP4qZDkPgCP4j1Wj8Xhf20MytHVUvVD7+hCo92nLT6UNaoRJAm+j/8/NDx/3tqjgo+eQmB6bI56z5ZqGtyK6Vg==", "article"=>{"title"=>"sd", "text"=>"sdf"}, "commit"=>"Save Article"}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/articles_controller.rb:7:in `create'
+  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.5ms)
+Started GET "/articles/new" for ::1 at 2017-04-24 21:43:17 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2017-04-24 21:43:21 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t7tOZg1V0aKFO4aq9G7OEg3CR4Inyw9BFYnHVn+xF+QyL+BLNjXyfrJ53BbyoDkp7Rdjb23tfCRcfPUnoVjiFw==", "article"=>{"title"=>"sd", "text"=>"sdf"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sd"], ["text", "sdf"], ["created_at", 2017-04-24 19:43:21 UTC], ["updated_at", 2017-04-24 19:43:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 20ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/articles/1" for ::1 at 2017-04-24 21:43:21 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 20.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for ::1 at 2017-04-24 21:44:50 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 33ms (Views: 27.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/new" for ::1 at 2017-04-24 21:49:10 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for ::1 at 2017-04-24 21:49:10 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2017-04-24 21:49:17 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J2wOvRmi5xRAC1RylTQ2L5J5KmWSaqdeLLW8Ss+7dcei+KCQIsLEyHdJDs6T+sEUcqwOiNhM1DtlQI47EVKANA==", "article"=>{"title"=>"", "text"=>"dsf"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 20ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/articles" for ::1 at 2017-04-24 21:49:17 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 27ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for ::1 at 2017-04-24 21:49:20 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 57ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2017-04-24 21:49:22 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7ZYjLVTCtF+r4Dk7c6rDiLe+lrNR004ZvMJikl+GjyI5OUh591o1jDMw7TXznYOCbxp8hlw4iDS2xEXf+3K09w==", "article"=>{"title"=>"asd", "text"=>""}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for ::1 at 2017-04-24 21:49:22 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for ::1 at 2017-04-24 21:49:23 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2017-04-24 21:49:25 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jg9Th+JXAkVTroyy/7Tsv4ilnEeebMR7lEjsj7QrQHbyoDjTQc+Dlst+WLx/g6y1UAF2cpOHAlaeTsvCEN97ow==", "article"=>{"title"=>"sad", "text"=>"asda"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for ::1 at 2017-04-24 21:49:25 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/1" for ::1 at 2017-04-24 21:49:27 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 62ms (Views: 56.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for ::1 at 2017-04-24 21:49:28 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 51ms (Views: 47.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for ::1 at 2017-04-24 21:49:30 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 58ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2017-04-24 21:49:58 +0200
+  
+LoadError (Unable to autoload constant ArticlesController, expected /Users/vivienne.klaassens/blog/app/controllers/articles_controller.rb to define it):
+  
+activesupport (5.0.2) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+activesupport (5.0.2) lib/active_support/dependencies.rb:203:in `const_missing'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+activesupport (5.0.2) lib/active_support/dependencies.rb:583:in `get'
+activesupport (5.0.2) lib/active_support/dependencies.rb:614:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
 actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
 actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
 actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
@@ -441,121 +621,30 @@ puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
 puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.6ms)
-Started POST "/articles" for ::1 at 2017-04-14 10:49:46 +0200
-Processing by ArticlesController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jPsspXemru0+x9k1SupcIuWNJRLfkJ7VKPg/aZrfzLYVZK/ctvRIQ1Y10Bca7n8ZVS5mdz4ebjjkp9RwEI4dAA==", "article"=>{"title"=>"", "text"=>""}, "commit"=>"Save Article"}
-  Rendering text template
-  Rendered text template (0.0ms)
-Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/articles" for ::1 at 2017-04-14 10:50:33 +0200
-Processing by ArticlesController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jPsspXemru0+x9k1SupcIuWNJRLfkJ7VKPg/aZrfzLYVZK/ctvRIQ1Y10Bca7n8ZVS5mdz4ebjjkp9RwEI4dAA==", "article"=>{"title"=>"sdfsd", "text"=>"dssdf"}, "commit"=>"Save Article"}
-  Rendering text template
-  Rendered text template (0.0ms)
-Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
-
-
-  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
-  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-Migrating to CreateArticles (20170414085110)
-  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
-  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170414085110"]]
-  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-04-14 08:54:24 UTC], ["updated_at", 2017-04-14 08:54:24 UTC]]
-  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-Started GET "/new" for ::1 at 2017-04-14 10:56:51 +0200
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-  
-ActionController::RoutingError (No route matches [GET] "/new"):
-  
-actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
-web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
-web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
-web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
-railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
-railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
-activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
-activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
-activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
-railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
-sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
-rack (2.0.1) lib/rack/method_override.rb:22:in `call'
-rack (2.0.1) lib/rack/runtime.rb:22:in `call'
-activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
-rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
-railties (5.0.2) lib/rails/engine.rb:522:in `call'
-puma (3.8.2) lib/puma/configuration.rb:224:in `call'
-puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
-puma (3.8.2) lib/puma/server.rb:435:in `process_client'
-puma (3.8.2) lib/puma/server.rb:299:in `block in run'
-puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
-  Rendered collection of /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (7.6ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (110.4ms)
-Started GET "/articles/new" for ::1 at 2017-04-14 10:57:04 +0200
-Processing by ArticlesController#new as HTML
-  Rendering articles/new.html.erb within layouts/application
-  Rendered articles/new.html.erb within layouts/application (4.8ms)
-Completed 200 OK in 57ms (Views: 54.1ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/articles" for ::1 at 2017-04-14 10:57:11 +0200
-Processing by ArticlesController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N9OMWiGiTgdVFAtsTZO6Iek14dUvNX2N8vkbM9nU+ReuTA8j4PCoqT3mAk4dl5kaWZaisM67jWA+pvAqU4UooQ==", "article"=>{"title"=>"sd", "text"=>"asd"}, "commit"=>"Save Article"}
-Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.0ms)
-
-
-  
-ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
-  
-app/controllers/articles_controller.rb:5:in `create'
   Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
   Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
   Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.8ms)
-Started POST "/articles" for ::1 at 2017-04-14 11:02:13 +0200
-Processing by ArticlesController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N9OMWiGiTgdVFAtsTZO6Iek14dUvNX2N8vkbM9nU+ReuTA8j4PCoqT3mAk4dl5kaWZaisM67jWA+pvAqU4UooQ==", "article"=>{"title"=>"sd", "text"=>"asd"}, "commit"=>"Save Article"}
-  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35mSQL (2.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sd"], ["text", "asd"], ["created_at", 2017-04-14 09:02:13 UTC], ["updated_at", 2017-04-14 09:02:13 UTC]]
-  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
-Redirected to http://localhost:3000/articles/1
-Completed 302 Found in 91ms (ActiveRecord: 5.5ms)
-
-
-Started GET "/articles/1" for ::1 at 2017-04-14 11:02:13 +0200
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.5ms)
+Started GET "/articles/new" for ::1 at 2017-04-24 21:50:29 +0200
   
-AbstractController::ActionNotFound (The action 'show' could not be found for ArticlesController):
+LoadError (Unable to autoload constant ArticlesController, expected /Users/vivienne.klaassens/blog/app/controllers/articles_controller.rb to define it):
   
-actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
-actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
-actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
-actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
-actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
-actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+activesupport (5.0.2) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+activesupport (5.0.2) lib/active_support/dependencies.rb:203:in `const_missing'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+activesupport (5.0.2) lib/active_support/dependencies.rb:583:in `get'
+activesupport (5.0.2) lib/active_support/dependencies.rb:614:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
 actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
 actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
 actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
@@ -600,621 +689,385 @@ puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
 puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.8ms)
-Started GET "/articles/new" for ::1 at 2017-04-14 11:06:42 +0200
+  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.6ms)
+  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.8ms)
+Started GET "/articles/new" for ::1 at 2017-04-24 21:51:27 +0200
 Processing by ArticlesController#new as HTML
   Rendering articles/new.html.erb within layouts/application
-  Rendered articles/new.html.erb within layouts/application (4.6ms)
-Completed 200 OK in 59ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+  Rendered articles/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 52ms (Views: 40.4ms | ActiveRecord: 0.9ms)
 
 
-Started POST "/articles" for ::1 at 2017-04-14 11:06:48 +0200
+Started POST "/articles" for ::1 at 2017-04-24 21:51:31 +0200
 Processing by ArticlesController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NEr08Mb9qp7zc1vOjj1xIjNp40CkYBNYj49004PWZK6t1XeJB69MMJuBUuzeOVIZg8qgJUXu47VD0J/KCYe1GA==", "article"=>{"title"=>"test", "text"=>"test"}, "commit"=>"Save Article"}
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CsRFYFCgNbeAvw/C9lXx3M3szK4Lu2U86HKQvy+7semPUOtNa8AWa7f9VX7wmwbnLTnoQ0GdFlmhh6LO8VJEGg==", "article"=>{"title"=>"aasd", "text"=>""}, "commit"=>"Save Article"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 30ms (Views: 26.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/articles" for ::1 at 2017-04-24 21:51:33 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+G+mqhS+oat+XKESspC+7NNz2BYjMTd5B2FpLEDAeY99+wiHL96Cd0ke+660XknXM6b8+2kXRBxOlFtdnimMfA==", "article"=>{"title"=>"aasd", "text"=>"asd"}, "commit"=>"Save Article"}
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "test"], ["text", "test"], ["created_at", 2017-04-14 09:06:48 UTC], ["updated_at", 2017-04-14 09:06:48 UTC]]
-  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for ::1 at 2017-04-24 21:51:36 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X1ffGfQq5bbOWLBnXhD4FW2K7s7bTrjoP/97J02CwePaw3E0z0rGavka6ttY3g8ujV/KI5Foy412CklWk2s0EA==", "article"=>{"title"=>"aasd", "text"=>"asdasd"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/articles" for ::1 at 2017-04-24 21:51:38 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sARhbC7niLbse9LMKcfnG+yVHzbrENT0H5Swf4a/6Qg1kM9BFYerats5iHAvCRAgDEA726E2p5FWYYIOWFYc+w==", "article"=>{"title"=>"aasdas", "text"=>"asdasd"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "aasdas"], ["text", "asdasd"], ["created_at", 2017-04-24 19:51:38 UTC], ["updated_at", 2017-04-24 19:51:38 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
 Redirected to http://localhost:3000/articles/2
-Completed 302 Found in 7ms (ActiveRecord: 2.2ms)
+Completed 302 Found in 7ms (ActiveRecord: 2.4ms)
 
 
-Started GET "/articles/2" for ::1 at 2017-04-14 11:06:48 +0200
+Started GET "/articles/2" for ::1 at 2017-04-24 21:51:38 +0200
 Processing by ArticlesController#show as HTML
   Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
   Rendering articles/show.html.erb within layouts/application
-  Rendered articles/show.html.erb within layouts/application (10.2ms)
-Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 31ms (Views: 27.0ms | ActiveRecord: 0.3ms)
 
 
-  
-ActionView::Template::Error (undefined method `title' for nil:NilClass):
-    1: <p>
-    2: 	<strong>Title:</strong>
-    3: 	<%= @article.title %>
-    4: </p>
-    5: 
-    6: <p>
-  
-app/views/articles/show.html.erb:3:in `_app_views_articles_show_html_erb___1407500519595229878_70169919081180'
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.0ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.8ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (118.7ms)
-Started POST "/articles" for ::1 at 2017-04-14 11:12:25 +0200
-Processing by ArticlesController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NEr08Mb9qp7zc1vOjj1xIjNp40CkYBNYj49004PWZK6t1XeJB69MMJuBUuzeOVIZg8qgJUXu47VD0J/KCYe1GA==", "article"=>{"title"=>"ruby", "text"=>"lets go"}, "commit"=>"Save Article"}
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ruby"], ["text", "lets go"], ["created_at", 2017-04-14 09:12:25 UTC], ["updated_at", 2017-04-14 09:12:25 UTC]]
-  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
-Redirected to http://localhost:3000/articles/3
-Completed 302 Found in 43ms (ActiveRecord: 6.9ms)
-
-
-Started GET "/articles/3" for ::1 at 2017-04-14 11:12:26 +0200
-Processing by ArticlesController#show as HTML
-  Parameters: {"id"=>"3"}
-  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
-  Rendering articles/show.html.erb within layouts/application
-  Rendered articles/show.html.erb within layouts/application (1.6ms)
-Completed 200 OK in 217ms (Views: 100.1ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/articles/3" for ::1 at 2017-04-14 11:19:39 +0200
-Processing by ArticlesController#show as HTML
-  Parameters: {"id"=>"3"}
-  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
-  Rendering articles/show.html.erb within layouts/application
-  Rendered articles/show.html.erb within layouts/application (5.2ms)
-Completed 200 OK in 162ms (Views: 111.1ms | ActiveRecord: 2.4ms)
-
-
-Started GET "/articles" for ::1 at 2017-04-14 11:19:42 +0200
-Processing by ArticlesController#index as HTML
-  Rendering articles/index.html.erb within layouts/application
-  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  Rendered articles/index.html.erb within layouts/application (5.5ms)
-Completed 200 OK in 74ms (Views: 69.2ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/articles" for ::1 at 2017-04-14 13:35:41 +0200
-Processing by ArticlesController#index as HTML
-  Rendering articles/index.html.erb within layouts/application
-  Rendered articles/index.html.erb within layouts/application (30.1ms)
-Completed 200 OK in 930ms (Views: 837.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for ::1 at 2017-04-14 13:35:47 +0200
-Processing by WelcomeController#index as HTML
-  Rendering welcome/index.html.erb within layouts/application
-  Rendered welcome/index.html.erb within layouts/application (6.2ms)
-Completed 200 OK in 201ms (Views: 194.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/?cotroller=articles" for ::1 at 2017-04-14 13:35:50 +0200
-Processing by WelcomeController#index as HTML
-  Parameters: {"cotroller"=>"articles"}
-  Rendering welcome/index.html.erb within layouts/application
-  Rendered welcome/index.html.erb within layouts/application (0.9ms)
-Completed 200 OK in 131ms (Views: 127.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/?cotroller=articles" for ::1 at 2017-04-14 13:35:54 +0200
-Processing by WelcomeController#index as HTML
-  Parameters: {"cotroller"=>"articles"}
-  Rendering welcome/index.html.erb within layouts/application
-  Rendered welcome/index.html.erb within layouts/application (2.8ms)
-Completed 200 OK in 80ms (Views: 73.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/articles/new" for ::1 at 2017-04-14 13:40:28 +0200
-Processing by ArticlesController#new as HTML
-  Rendering articles/new.html.erb within layouts/application
-  Rendered articles/new.html.erb within layouts/application (19.2ms)
-Completed 200 OK in 168ms (Views: 113.5ms | ActiveRecord: 4.7ms)
-
-
-Started POST "/articles" for ::1 at 2017-04-14 13:40:32 +0200
-Processing by ArticlesController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r6JFRp0PqKMTOnGjRmn35x/C2W4pFNcfTUwfL3pt6BQ2PcY/XF1ODXvIeIEWbdTcr2GaC8iaJ/KBE/Q28Dw5og==", "article"=>{"title"=>"", "text"=>""}, "commit"=>"Save Article"}
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
-  Rendering articles/new.html.erb within layouts/application
-  Rendered articles/new.html.erb within layouts/application (5.6ms)
-Completed 200 OK in 74ms (Views: 57.1ms | ActiveRecord: 0.2ms)
-
-
-Started POST "/articles" for ::1 at 2017-04-14 13:45:02 +0200
-Processing by ArticlesController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rf6PrvpfN3U9pFlqnBJpIdzB6xHHSKhxQKfVxpu49ZLKHlHeruac7wEmEf6dGqfN9BEyaaT0kwJXXROkD8yYA==", "article"=>{"title"=>"", "text"=>""}, "commit"=>"Save Article"}
-  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
-  Rendering articles/new.html.erb within layouts/application
-  Rendered articles/new.html.erb within layouts/application (10.5ms)
-Completed 200 OK in 117ms (Views: 71.0ms | ActiveRecord: 0.5ms)
-
-
-Started GET "/articles" for ::1 at 2017-04-14 13:45:17 +0200
-Processing by ArticlesController#index as HTML
-  Rendering articles/index.html.erb within layouts/application
-  Rendered articles/index.html.erb within layouts/application (0.7ms)
-Completed 200 OK in 40ms (Views: 35.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/articles/new" for ::1 at 2017-04-14 13:45:19 +0200
-Processing by ArticlesController#new as HTML
-  Rendering articles/new.html.erb within layouts/application
-  Rendered articles/new.html.erb within layouts/application (3.2ms)
-Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/articles" for ::1 at 2017-04-14 13:45:20 +0200
-Processing by ArticlesController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J0jlvub04uYp/bksiG02yxVGe+wwjp2nweo/1bIQZHHhNBAoe42EbJ5RYiiLEtlA5+zLnbCC9GdWjx9XAUxj9w==", "article"=>{"title"=>"", "text"=>""}, "commit"=>"Save Article"}
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
-  Rendering articles/new.html.erb within layouts/application
-  Rendered articles/new.html.erb within layouts/application (8.5ms)
-Completed 200 OK in 72ms (Views: 66.7ms | ActiveRecord: 0.2ms)
-
-
-Started GET "/articles" for ::1 at 2017-04-14 14:15:54 +0200
-  
-SyntaxError (/Users/vivienne.klaassens/blog/app/controllers/articles_controller.rb:38: syntax error, unexpected end-of-input, expecting keyword_end):
-  
-app/controllers/articles_controller.rb:38: syntax error, unexpected end-of-input, expecting keyword_end
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (21.4ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.1ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.2ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (135.4ms)
-Started GET "/articles" for ::1 at 2017-04-14 14:16:37 +0200
-  
-SyntaxError (/Users/vivienne.klaassens/blog/app/controllers/articles_controller.rb:37: syntax error, unexpected end-of-input, expecting keyword_end):
-  
-app/controllers/articles_controller.rb:37: syntax error, unexpected end-of-input, expecting keyword_end
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.9ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.5ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (120.7ms)
-Started GET "/articles" for ::1 at 2017-04-14 14:17:18 +0200
-  
-SyntaxError (/Users/vivienne.klaassens/blog/app/controllers/articles_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end):
-  
-app/controllers/articles_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.8ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.2ms)
-Started GET "/articles" for ::1 at 2017-04-14 14:18:36 +0200
-  
-SyntaxError (/Users/vivienne.klaassens/blog/app/controllers/articles_controller.rb:38: syntax error, unexpected end-of-input, expecting keyword_end):
-  
-app/controllers/articles_controller.rb:38: syntax error, unexpected end-of-input, expecting keyword_end
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.7ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (103.5ms)
-Started GET "/articles" for ::1 at 2017-04-14 14:19:08 +0200
-Processing by ArticlesController#index as HTML
-  Rendering articles/index.html.erb within layouts/application
-  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  Rendered articles/index.html.erb within layouts/application (23.8ms)
-Completed 200 OK in 95ms (Views: 80.0ms | ActiveRecord: 2.1ms)
-
-
-Started GET "/articles/3/edit" for ::1 at 2017-04-14 14:19:11 +0200
-Processing by ArticlesController#edit as HTML
-  Parameters: {"id"=>"3"}
-  Rendering articles/edit.html.erb within layouts/application
-  Rendered articles/edit.html.erb within layouts/application (2.1ms)
-Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
-
-
-  
-SyntaxError (/Users/vivienne.klaassens/blog/app/views/articles/edit.html.erb:12: syntax error, unexpected '=', expecting keyword_end
-ppend='        <li>'.freeze; = msg ;@output_buffer.safe_appe
-                              ^
-/Users/vivienne.klaassens/blog/app/views/articles/edit.html.erb:34: syntax error, unexpected keyword_ensure, expecting end-of-input
-          ensure
-                ^):
-  
-app/views/articles/edit.html.erb:12: syntax error, unexpected '=', expecting keyword_end
-app/views/articles/edit.html.erb:34: syntax error, unexpected keyword_ensure, expecting end-of-input
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.5ms)
-Started GET "/articles/3" for ::1 at 2017-04-14 14:19:22 +0200
-Processing by ArticlesController#show as HTML
-  Parameters: {"id"=>"3"}
-  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
-  Rendering articles/show.html.erb within layouts/application
-  Rendered articles/show.html.erb within layouts/application (0.9ms)
-Completed 200 OK in 46ms (Views: 35.5ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/articles" for ::1 at 2017-04-14 14:19:26 +0200
+Started GET "/articles" for ::1 at 2017-04-24 21:51:40 +0200
 Processing by ArticlesController#index as HTML
   Rendering articles/index.html.erb within layouts/application
   [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  Rendered articles/index.html.erb within layouts/application (4.4ms)
-Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 0.2ms)
+  Rendered articles/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 50ms (Views: 46.9ms | ActiveRecord: 0.2ms)
 
 
-Started GET "/articles" for ::1 at 2017-04-14 14:20:35 +0200
-Processing by ArticlesController#index as HTML
-  Rendering articles/index.html.erb within layouts/application
-  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  Rendered articles/index.html.erb within layouts/application (2.4ms)
-Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.2ms)
-
-
-Started GET "/articles" for ::1 at 2017-04-14 14:20:54 +0200
-Processing by ArticlesController#index as HTML
-  Rendering articles/index.html.erb within layouts/application
-  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  Rendered articles/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 41ms (Views: 38.3ms | ActiveRecord: 0.2ms)
-
-
-Started GET "/articles" for ::1 at 2017-04-14 14:39:43 +0200
-Processing by ArticlesController#index as HTML
-  Rendering articles/index.html.erb within layouts/application
-  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  Rendered articles/index.html.erb within layouts/application (32.4ms)
-Completed 200 OK in 165ms (Views: 149.0ms | ActiveRecord: 2.1ms)
-
-
-Started GET "/articles" for ::1 at 2017-04-14 14:39:47 +0200
-Processing by ArticlesController#index as HTML
-  Rendering articles/index.html.erb within layouts/application
-  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  Rendered articles/index.html.erb within layouts/application (5.2ms)
-Completed 200 OK in 70ms (Views: 67.7ms | ActiveRecord: 0.2ms)
-
-
-Started GET "/articles/new" for ::1 at 2017-04-14 16:01:35 +0200
-  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-Processing by ArticlesController#new as HTML
-  Rendering articles/new.html.erb within layouts/application
-  Rendered articles/_form.html.erb (29.4ms)
-  Rendered articles/new.html.erb within layouts/application (33.7ms)
-Completed 200 OK in 469ms (Views: 437.7ms | ActiveRecord: 0.9ms)
-
-
-Started GET "/" for ::1 at 2017-04-14 16:01:41 +0200
-Processing by WelcomeController#index as HTML
-  Rendering welcome/index.html.erb within layouts/application
-  Rendered welcome/index.html.erb within layouts/application (3.2ms)
-Completed 200 OK in 76ms (Views: 72.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/?cotroller=articles" for ::1 at 2017-04-14 16:01:42 +0200
-Processing by WelcomeController#index as HTML
-  Parameters: {"cotroller"=>"articles"}
-  Rendering welcome/index.html.erb within layouts/application
-  Rendered welcome/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 81ms (Views: 77.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/articles" for ::1 at 2017-04-15 10:38:28 +0200
-  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-Processing by ArticlesController#index as HTML
-  Rendering articles/index.html.erb within layouts/application
-  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  Rendered articles/index.html.erb within layouts/application (20.7ms)
-Completed 200 OK in 438ms (Views: 414.6ms | ActiveRecord: 1.4ms)
-
-
-Started GET "/" for ::1 at 2017-04-15 10:38:30 +0200
-Processing by WelcomeController#index as HTML
-Completed 406 Not Acceptable in 88ms (ActiveRecord: 0.0ms)
-
-
-  
-ActionController::UnknownFormat (WelcomeController#index is missing a template for this request format and variant.
-
-request.formats: ["text/html"]
-request.variant: []
-
-NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
-  
-actionpack (5.0.2) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
-actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
-actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
-actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
-actionpack (5.0.2) lib/abstract_controller/base.rb:188:in `process_action'
-actionpack (5.0.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
-actionpack (5.0.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
-activesupport (5.0.2) lib/active_support/callbacks.rb:126:in `call'
-activesupport (5.0.2) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
-activesupport (5.0.2) lib/active_support/callbacks.rb:455:in `call'
-activesupport (5.0.2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
-activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
-activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
-actionpack (5.0.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
-actionpack (5.0.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
-actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
-activesupport (5.0.2) lib/active_support/notifications.rb:164:in `block in instrument'
-activesupport (5.0.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
-activesupport (5.0.2) lib/active_support/notifications.rb:164:in `instrument'
-actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
-actionpack (5.0.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
-activerecord (5.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
-actionpack (5.0.2) lib/abstract_controller/base.rb:126:in `process'
-actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
-actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
-actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
-actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
-actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
-actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
-actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
-actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
-actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
-rack (2.0.1) lib/rack/etag.rb:25:in `call'
-rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
-rack (2.0.1) lib/rack/head.rb:12:in `call'
-rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
-rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
-activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
-activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
-activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
-activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
-actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
-web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
-web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
-web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
-railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
-railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
-activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
-activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
-activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
-railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
-sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
-rack (2.0.1) lib/rack/method_override.rb:22:in `call'
-rack (2.0.1) lib/rack/runtime.rb:22:in `call'
-activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
-rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
-railties (5.0.2) lib/rails/engine.rb:522:in `call'
-puma (3.8.2) lib/puma/configuration.rb:224:in `call'
-puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
-puma (3.8.2) lib/puma/server.rb:435:in `process_client'
-puma (3.8.2) lib/puma/server.rb:299:in `block in run'
-puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.7ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.5ms)
-Started GET "/" for ::1 at 2017-04-15 10:38:31 +0200
-Processing by WelcomeController#index as HTML
-Completed 406 Not Acceptable in 61ms (ActiveRecord: 0.0ms)
-
-
-  
-ActionController::UnknownFormat (WelcomeController#index is missing a template for this request format and variant.
-
-request.formats: ["text/html"]
-request.variant: []
-
-NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
-  
-actionpack (5.0.2) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
-actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
-actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
-actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
-actionpack (5.0.2) lib/abstract_controller/base.rb:188:in `process_action'
-actionpack (5.0.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
-actionpack (5.0.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
-activesupport (5.0.2) lib/active_support/callbacks.rb:126:in `call'
-activesupport (5.0.2) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
-activesupport (5.0.2) lib/active_support/callbacks.rb:455:in `call'
-activesupport (5.0.2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
-activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
-activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
-actionpack (5.0.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
-actionpack (5.0.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
-actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
-activesupport (5.0.2) lib/active_support/notifications.rb:164:in `block in instrument'
-activesupport (5.0.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
-activesupport (5.0.2) lib/active_support/notifications.rb:164:in `instrument'
-actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
-actionpack (5.0.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
-activerecord (5.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
-actionpack (5.0.2) lib/abstract_controller/base.rb:126:in `process'
-actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
-actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
-actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
-actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
-actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
-actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
-actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
-actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
-actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
-rack (2.0.1) lib/rack/etag.rb:25:in `call'
-rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
-rack (2.0.1) lib/rack/head.rb:12:in `call'
-rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
-rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
-activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
-activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
-activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
-activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
-actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
-web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
-web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
-web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
-railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
-railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
-activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
-activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
-activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
-railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
-sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
-rack (2.0.1) lib/rack/method_override.rb:22:in `call'
-rack (2.0.1) lib/rack/runtime.rb:22:in `call'
-activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
-rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
-railties (5.0.2) lib/rails/engine.rb:522:in `call'
-puma (3.8.2) lib/puma/configuration.rb:224:in `call'
-puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
-puma (3.8.2) lib/puma/server.rb:435:in `process_client'
-puma (3.8.2) lib/puma/server.rb:299:in `block in run'
-puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.1ms)
-Started GET "/articles" for ::1 at 2017-04-15 10:38:38 +0200
+Started GET "/articles" for ::1 at 2017-04-24 21:55:21 +0200
 Processing by ArticlesController#index as HTML
   Rendering articles/index.html.erb within layouts/application
   [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  Rendered articles/index.html.erb within layouts/application (3.7ms)
-Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.4ms)
+  Rendered articles/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 49ms (Views: 42.2ms | ActiveRecord: 1.0ms)
 
 
-Started GET "/articles/new" for ::1 at 2017-04-15 10:38:39 +0200
+Started GET "/articles/1/edit" for ::1 at 2017-04-24 21:55:23 +0200
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 56ms (Views: 50.8ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/articles/1" for ::1 at 2017-04-24 21:55:25 +0200
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zCVzrq4b77fJeg/8jBN94IZ3rToFW/ss3IbMxDvLpBGW3cxAKVQD9e6wQMKsOVJo+hrYRi2fG9iVyKo1LqM4Ww==", "article"=>{"title"=>"sd", "text"=>"sdf"}, "commit"=>"Save Article", "id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 33ms (Views: 26.9ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/articles/1" for ::1 at 2017-04-24 21:55:28 +0200
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JpfkfbX19YIdl4OQKJI8excN0oP+FtKA+WoQA40sYtKjA0pQjpXWXirV2SwuXMtA99j2brQwoeWwnyJyU8WXIQ==", "article"=>{"title"=>"sdasda", "text"=>"sdf"}, "commit"=>"Save Article", "id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "sdasda"], ["updated_at", 2017-04-24 19:55:28 UTC], ["id", 1]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 7ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/articles/1" for ::1 at 2017-04-24 21:55:28 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 23.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for ::1 at 2017-04-24 21:55:30 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 53ms (Views: 51.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for ::1 at 2017-04-24 21:55:33 +0200
 Processing by ArticlesController#new as HTML
   Rendering articles/new.html.erb within layouts/application
-  Rendered articles/_form.html.erb (31.6ms)
-  Rendered articles/new.html.erb within layouts/application (35.3ms)
-Completed 200 OK in 70ms (Views: 66.7ms | ActiveRecord: 0.0ms)
+  Rendered articles/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 45ms (Views: 42.8ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/articles/1" for ::1 at 2017-04-15 10:39:03 +0200
+Started GET "/articles" for ::1 at 2017-04-24 21:55:34 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 49ms (Views: 46.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for ::1 at 2017-04-24 21:59:13 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 49ms (Views: 40.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/1" for ::1 at 2017-04-24 21:59:16 +0200
 Processing by ArticlesController#show as HTML
   Parameters: {"id"=>"1"}
   [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   Rendering articles/show.html.erb within layouts/application
-  Rendered articles/show.html.erb within layouts/application (3.3ms)
-Completed 200 OK in 73ms (Views: 63.2ms | ActiveRecord: 0.3ms)
+  Rendered articles/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 56ms (Views: 51.9ms | ActiveRecord: 0.3ms)
 
 
-Started GET "/articles/1/edit" for ::1 at 2017-04-15 10:39:06 +0200
+Started GET "/articles" for ::1 at 2017-04-24 21:59:17 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 68ms (Views: 64.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/1/edit" for ::1 at 2017-04-24 21:59:18 +0200
 Processing by ArticlesController#edit as HTML
   Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   Rendering articles/edit.html.erb within layouts/application
-  Rendered articles/_form.html.erb (3.4ms)
-  Rendered articles/edit.html.erb within layouts/application (6.6ms)
-Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+  Rendered articles/_form.html.erb (5.9ms)
+  Rendered articles/edit.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 53ms (Views: 49.7ms | ActiveRecord: 0.1ms)
 
 
-  
-ActionView::Template::Error (First argument in form cannot contain nil or be empty):
-    1: <%= form_for @article do |f| %>
-    2: 
-    3:   <% if @article.errors.any?%>
-    4:   <div id="error_explanation">
-  
-app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__485891422564424313_70114382627940'
-app/views/articles/edit.html.erb:3:in `_app_views_articles_edit_html_erb__185950450353297392_70114382661420'
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.1ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.6ms)
-Started GET "/articles/1" for ::1 at 2017-04-15 10:39:35 +0200
+Started GET "/articles" for ::1 at 2017-04-24 21:59:19 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 42ms (Views: 39.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/2/edit" for ::1 at 2017-04-24 21:59:22 +0200
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (5.3ms)
+  Rendered articles/edit.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 47ms (Views: 44.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for ::1 at 2017-04-24 21:59:23 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 52ms (Views: 49.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/1" for ::1 at 2017-04-24 21:59:24 +0200
 Processing by ArticlesController#show as HTML
   Parameters: {"id"=>"1"}
   [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   Rendering articles/show.html.erb within layouts/application
-  Rendered articles/show.html.erb within layouts/application (0.8ms)
-Completed 200 OK in 36ms (Views: 32.2ms | ActiveRecord: 0.2ms)
+  Rendered articles/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 49ms (Views: 45.9ms | ActiveRecord: 0.2ms)
 
 
-Started GET "/articles/1/edit" for ::1 at 2017-04-15 10:39:38 +0200
+Started GET "/articles/1/edit" for ::1 at 2017-04-24 21:59:25 +0200
 Processing by ArticlesController#edit as HTML
   Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   Rendering articles/edit.html.erb within layouts/application
-  Rendered articles/_form.html.erb (4.6ms)
-  Rendered articles/edit.html.erb within layouts/application (12.5ms)
-Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+  Rendered articles/_form.html.erb (3.8ms)
+  Rendered articles/edit.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 56ms (Views: 52.5ms | ActiveRecord: 0.2ms)
 
 
-  
-ActionView::Template::Error (First argument in form cannot contain nil or be empty):
-    1: <%= form_for @article do |f| %>
-    2: 
-    3:   <% if @article.errors.any?%>
-    4:   <div id="error_explanation">
-  
-app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__485891422564424313_70114374743120'
-app/views/articles/edit.html.erb:3:in `_app_views_articles_edit_html_erb__185950450353297392_70114346186780'
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
-  Rendering /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
-  Rendered /Users/vivienne.klaassens/.bundle/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.6ms)
-Started GET "/articles/" for ::1 at 2017-04-15 10:39:42 +0200
+Started GET "/articles" for ::1 at 2017-04-24 21:59:26 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 55ms (Views: 51.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for ::1 at 2017-04-24 21:59:34 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (4.5ms)
+  Rendered articles/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 55ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for ::1 at 2017-04-24 21:59:35 +0200
 Processing by ArticlesController#index as HTML
   Rendering articles/index.html.erb within layouts/application
   [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
-  Rendered articles/index.html.erb within layouts/application (4.2ms)
-Completed 200 OK in 46ms (Views: 42.6ms | ActiveRecord: 0.3ms)
+  Rendered articles/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 51ms (Views: 46.8ms | ActiveRecord: 0.3ms)
 
 
-Started GET "/articles/new" for ::1 at 2017-04-15 10:39:44 +0200
+Started GET "/articles" for ::1 at 2017-04-24 22:00:43 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for ::1 at 2017-04-24 22:00:45 +0200
 Processing by ArticlesController#new as HTML
   Rendering articles/new.html.erb within layouts/application
-  Rendered articles/_form.html.erb (2.6ms)
-  Rendered articles/new.html.erb within layouts/application (6.3ms)
-Completed 200 OK in 59ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+  Rendered articles/_form.html.erb (3.5ms)
+  Rendered articles/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 51ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2017-04-24 22:00:49 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SbI54H+xSLCDRxTaq9WwnaYeMsmtG7ZBN4je8HoJPpCdHVK03CnJYxuXwNQr4vCXfrrY/KDwcGw9jvm93v0FRQ==", "article"=>{"title"=>"sdasda", "text"=>"s"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sdasda"], ["text", "s"], ["created_at", 2017-04-24 20:00:49 UTC], ["updated_at", 2017-04-24 20:00:49 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/3
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/articles/3" for ::1 at 2017-04-24 22:00:49 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/3/edit" for ::1 at 2017-04-24 22:00:51 +0200
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (3.7ms)
+  Rendered articles/edit.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 61ms (Views: 57.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for ::1 at 2017-04-24 22:00:52 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 45ms (Views: 42.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/1" for ::1 at 2017-04-24 22:00:56 +0200
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"g3YI2nXWRJacKcXPz4gPw6HC1T7UR9Ik6NHJrRKWVawG4qb3TrZnSqtrn3PJRvj4QRfx055hoUGhJPvczH+gXw==", "id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/articles" for ::1 at 2017-04-24 22:00:56 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/2/edit" for ::1 at 2017-04-24 22:00:57 +0200
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (6.0ms)
+  Rendered articles/edit.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 71ms (Views: 67.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/articles/2" for ::1 at 2017-04-24 22:01:00 +0200
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NIFAnubt0MA323RlUQtML/5wjRXxQAQ9RGyRHcYFqMB84h7Lw8W+re2TyJfN1vm2EcAiOuSapjN7AhpE5XzCMA==", "article"=>{"title"=>"aasdasssss", "text"=>"asdasdsssss"}, "commit"=>"Update Article", "id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "text" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "aasdasssss"], ["text", "asdasdsssss"], ["updated_at", 2017-04-24 20:01:00 UTC], ["id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/2
+Completed 302 Found in 7ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/articles/2" for ::1 at 2017-04-24 22:01:00 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for ::1 at 2017-04-24 22:01:02 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 73ms (Views: 70.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/2" for ::1 at 2017-04-24 22:01:04 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 50ms (Views: 47.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for ::1 at 2017-04-25 08:17:14 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (20.0ms)
+  Rendered articles/new.html.erb within layouts/application (36.2ms)
+Completed 200 OK in 145ms (Views: 126.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for ::1 at 2017-04-25 08:18:02 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (4.0ms)
+  Rendered articles/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 68ms (Views: 65.1ms | ActiveRecord: 0.0ms)
 
 
